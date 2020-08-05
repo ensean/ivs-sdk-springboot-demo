@@ -22,7 +22,7 @@ public class ChannelController {
     }
 
     @RequestMapping(value = "/api/channel", method = RequestMethod.POST)
-    public Map<String, String> createChannel(@RequestBody Map<String, String> params){
+    public Map<String, String> createChannel(@RequestBody String params){
 
         System.out.println(params);
 

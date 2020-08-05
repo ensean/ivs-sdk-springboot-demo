@@ -28,14 +28,8 @@ public class ChannelController {
 
         String cn = "default_channel_name";
         try{
-            cn = params.get("cname");
-            CreateChannelResponse response = channelService.createChannel(cn);
-            Map<String, String> res = new HashMap<>();
-            res.put("channelName", response.channel().name());
-            res.put("channelArn", response.channel().arn());
-            res.put("igUrl", response.channel().ingestEndpoint());
-            res.put("playbackUrl", response.channel().playbackUrl());
-            return res;
+            
+            return 'Resp from api';
         }
         catch (Exception e){
             e.printStackTrace();

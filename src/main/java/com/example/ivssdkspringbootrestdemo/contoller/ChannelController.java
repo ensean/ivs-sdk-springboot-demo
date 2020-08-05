@@ -28,8 +28,10 @@ public class ChannelController {
 
         String cn = "default_channel_name";
         try{
-            
-            return "Resp from api";
+            Map<String, String> resp = new HashMap<>();
+            resp.put("code", 0);
+            resp.put("msg", "event got");
+            return resp;
         }
         catch (Exception e){
             e.printStackTrace();

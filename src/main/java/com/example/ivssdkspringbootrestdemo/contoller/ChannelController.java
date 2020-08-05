@@ -29,7 +29,7 @@ public class ChannelController {
         String cn = "default_channel_name";
         try{
             
-            return 'Resp from api';
+            return "Resp from api";
         }
         catch (Exception e){
             e.printStackTrace();

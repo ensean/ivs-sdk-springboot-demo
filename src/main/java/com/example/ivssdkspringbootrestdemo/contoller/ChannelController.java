@@ -29,7 +29,7 @@ public class ChannelController {
         String cn = "default_channel_name";
         try{
             Map<String, String> resp = new HashMap<>();
-            resp.put("code", 0);
+            resp.put("code", "0");
             resp.put("msg", "event got");
             return resp;
         }
